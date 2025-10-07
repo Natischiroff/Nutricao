@@ -7,7 +7,7 @@ var paciente = document.querySelector("#primeiro-paciente");
 console.log(paciente);
 
 var tdNome = paciente.querySelector(".info-nome");
-var nome = tdPeso.textContent;
+var nome = tdNome.textContent;
 console.log(nome);
 
 var tdPeso = paciente.querySelector(".info-peso");
