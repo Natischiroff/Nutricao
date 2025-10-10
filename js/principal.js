@@ -18,22 +18,30 @@ var tdAltura = document.querySelector(".info-altura");
 var altura = tdAltura.textContent;
 console.log(altura);
 
-var imc = peso/ (altura*altura);
+var imc = peso / (altura * altura);
 var altura = tdAltura.textContent;
 console.log(imc);
 
-var tdImc =paciente.querySelector(".info-imc");
+var tdImc = paciente.querySelector(".info-imc");
 tdImc.textContent + imcFixed(2);
 
-if(peso <0 || peso >1000) {
+var pesoEhValido = true;
+var alturaEhValida = true;
+
+
+if (peso < 0 || peso > 1000) {
     console.log("Peso inválido");
     pesoEhValido = false;
 }
 
 if (altura < 0 || altura > 3.00) {
     console.log("Altura inválida");
-    alturaEhValida = false
+    alturaEhValida = false;
 }
 
-var pesoEhValido= true;
-var alturaEhValida= true;
+
+if (alturaEhValida && pesoEhValido) {
+    var imc = peso / (altura * altura);
+    tdImc.textContent = imc;
+
+}
