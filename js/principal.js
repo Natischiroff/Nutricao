@@ -92,4 +92,6 @@ botaoAdicionar.addEventListener("click", function (event) {
     tabela.appendChild(pacienteTr);
 });
 
+
+
 // ele está funcionando mas a pagina recarrega rapido pq e o comportamento esperado do botao e limpa automaticamente o console, entao por isso a gnt nao consegue ver no console.  Está certo, mas precisamos mudar o comportamento do botaão 
