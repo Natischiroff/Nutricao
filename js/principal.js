@@ -1,7 +1,7 @@
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
-titulo.textContent = ("Aparecida Nutricionista");
+titulo.textContent = ("Naty Nutricionista");
 
 21 / 10
 
@@ -16,6 +16,8 @@ for (var i = 0; i < pacientes.length; i++) {
 
     var tdAltura = paciente.querySelector(".info-altura");
     var altura = tdAltura.textContent;
+    
+    // var titulo = document.querySelector("h1");
 
     var tdImc = paciente.querySelector(".info-imc");
 
