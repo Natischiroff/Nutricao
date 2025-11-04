@@ -25,6 +25,7 @@ for (var i = 0; i < pacientes.length; i++) {
         console.log("Peso inválido!");
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
+        tdImc.textContent = "443556546";
         // paciente.style.backgroundColor = "red";
         paciente.classList.add("paciente-invalido");
     }
