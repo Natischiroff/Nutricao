@@ -22,7 +22,6 @@ for (var i = 0; i < pacientes.length; i++) {
     var alturaEhValida = true;
 
     if (peso <= 0 || peso >= 1000) {
-        console.log("Peso inválido!");
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
         // paciente.style.backgroundColor = "red";
@@ -30,7 +29,6 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 
     if (altura <= 0 || altura >= 3.00) {
-        console.log("Altura inválida!");
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
         paciente.classList.add("paciente-invalido");
@@ -47,23 +45,3 @@ function calculaImc (peso,altura){
     var imc =peso/ (altura* altura);
     return imc.toFixed(2);
 }
-
-// 23/10
-
-// titulo.addEventListener() adiciona um escutador de eventos. 
-// PRIMEIRO MOSTRAR ESSA - DEPOIS ALTERA-LA PARA FICAR ANONIMA
-titulo.addEventListener("click", mostraMensagem);
-function mostraMensagem() {
-    alert("Olá eu fui clicado.")
-}
-
-// funcao anonima = a de cima mas diferente
-titulo.addEventListener("click", function () {
-    alert("Ola eu fui clicado numa funcao anonima");
-});
-
-// EU QUERO CHAMAR UM EVENTO DE CLICK QUANDO CLICAR NO BOTAO ADICIONAR
-
-
-
-// ele está funcionando mas a pagina recarrega rapido pq e o comportamento esperado do botao e limpa automaticamente o console, entao por isso a gnt nao consegue ver no console.  Está certo, mas precisamos mudar o comportamento do botaão 
